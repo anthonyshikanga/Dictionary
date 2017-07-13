@@ -1,0 +1,7 @@
+<h2>The word:
+<ul>
+  <% @word_def.each() do |special_word| %>
+    <li><%= special_word.word()%><hr><%= special_word.definition()%></li>
+    <% end %>
+  </ul>
+</h2>

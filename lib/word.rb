@@ -1,8 +1,9 @@
 class Word
   @@word = []
 
-  define_method(:initialize) do |word|
+  define_method(:initialize) do |word,definition|
     @word = word
+    @definition = definition
     @id = @@word.length().+(1)
   end
 
@@ -12,6 +13,10 @@ class Word
 
   define_method(:id) do
     @id
+  end
+
+  define_method(:definition) do
+    @definition
   end
 
   define_singleton_method(:all) do

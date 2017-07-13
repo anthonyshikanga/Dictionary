@@ -2,8 +2,11 @@
 
   <p>Add a word here:</p>
 
-  <form action="/word/new" method="post">
+  <form action="/words/:id/definition" method="post">
     <label for="word">Word:</label>
     <input id="word" name="word" type="text">
+    <label for="definition">Define:</label>
+    <input id="definition" name="definition" type="text">
+
     <button type="submit">Add Word</button>
 </form>

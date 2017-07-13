@@ -1,8 +1,12 @@
 <h1>Words</h1>
 
-  <h3>Here are the current words in this Dictionary: </h3>
-  <ul>
-  <% @words.each() do |word| %>
-    <li><a href="/word/<%= word.id() %>"></a></li>
-  <% end %>
-  </ul>
+<h3>Here are the current words in this Dictionary: </h3>
+
+<ul>
+<% @word_entries.each() do |word| %>
+  <li><a href="/words/<%= word.id() %>/new"><%= word.word() %></a></li>
+<% end %>
+</ul>
+
+<a href="/word/new">Add a new word</a>
+<a href="/">Return to Main Page</a>
